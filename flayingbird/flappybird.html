@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/flappybird.css"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		<div id="wrapGame">
+			<!-- 头部的菜单部分
+			 -->
+			 <div id="head">
+				 <img src="img/bird.png" >
+			 </div>
+			 <!-- 开始按钮
+			  -->
+			  <div id="startMenu">
+				  <img src="img/start.jpg" >
+			  </div>
+			  <!-- 结束菜单 -->
+			  <div id="endMenu">
+				  <img src="img/message.jpg" >
+				  <!-- 显示当前得分 -->
+				  <span id="currentScore">0</span>
+				  <!-- 显示历史最高分 -->
+				  <span id="bestScore">0</span>
+			  </div>
+			  <!-- 所有管道 -->
+			  <ul id="pipes">
+				  <!-- 一个li表示一组管道 -->
+				 <!-- <li class="pipe">
+					  <div class="up_pipe"></div>
+					  <div class="down_pipe"></div>
+				  </li> -->
+			  </ul>
+			  <!-- 设置飞翔的小鸟 -->
+			  <img src="img/bird.png" alt="" id="bird">
+			  <!-- 设置记录分数的图片 -->
+			  <div id="score">
+				  <img src="img/0.jpg" >
+			  </div>
+			  <!-- 滚动的草坪 -->
+			  <div id="grass">
+				  <img src="img/banner.jpg" >
+				  <img src="img/banner.jpg" >
+			  </div>
+			  <!-- 游戏的背景音乐 -->
+			  <audio id="gameMusic" src="musics/game_music.mp3" ></audio>
+			  <!-- 小鸟飞翔的音乐 -->
+			  <audio id="bulletMusic" src="musics/bullet.mp3"></audio>
+			  <!-- 小鸟死亡的音乐 -->
+			  <audio src="musics/game_over.mp3" id="gameOver"></audio>
+			  
+		</div>
+	</body>
+	<script src="js/flappybird.js" type="text/javascript" charset="utf-8"></script>
+</html>

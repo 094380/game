@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#wrapGame{
+	width: 343px;
+	height: 480px;
+	margin:30px auto;
+	background: url(../img/bg.jpg) no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+#head{
+	   width: 236px;
+	   height: 77px;
+	   background: url(../img/head.jpg) no-repeat;
+	   position: absolute;
+	   left: 50%;
+	   top: 110px;
+	   margin-left: -110px;
+}
+#head img{
+	position: absolute;
+	right: 0;
+	top: 40%;
+	/* 添加动画 */
+	animation: flyBird 2s linear infinite;
+}
+/* 添加动画 */
+@-webkit-keyframes flyBird{
+    0%{
+		top: 40%;
+	}
+	25%{
+		top: 10%;
+	}
+	50%{
+		top: 40%;
+	}
+	75%{
+		top: 60%;
+	}
+    100%{
+		top: 40%;
+	}
+}
+#startMenu{
+	position: absolute;
+	top: 230px;
+	left: 50%;
+	margin-left: -42px;
+}
+#endMenu{
+	position: absolute;
+	top: 110px;
+	left: 37px;
+	display: none;
+}
+#currentScore {
+	position: absolute;
+	right: 60px;
+	top: 40px;
+}
+#bestScore{
+	   position: absolute;
+	   right: 60px;
+	   top: 90px;
+}
+#pipes{
+	height: 422px;
+	list-style-type: none;
+	/* border: 1px solid black; */
+}
+.pipe{
+	height: 422px;
+	width: 62px;
+	position: absolute;
+	left: 350px;
+	top: 0;
+	/* border: 1px solid blue; */
+}
+.up_pipe{
+	width: 62px;
+	height: 150px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: url(../img/up_pipe.png) bottom no-repeat,url(../img/up_mod.png) repeat-y;
+	/* border: 1px solid red; */
+}
+.down_pipe{
+	width: 62px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: url(../img/down_pipe.png)  no-repeat,url(../img/down_mod.png) repeat-y;
+	/* border: 1px solid red; */
+}
+#bird{
+	position: absolute;
+	left: 60px;
+	top: 40%;
+	display: none;
+}
+#score{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -15px;
+	display: none;
+}
+#grass{
+	 width: 686px;
+	 position: absolute;
+	 left: 0;
+	 bottom: 43px;
+	 /* border: 1px solid red; */
+}
+#grass img{
+	float: left;
+	width: 343px;
+}
