@@ -1,0 +1,28 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+h1{
+	text-align: center;
+}
+#score{
+	text-align: center;
+	font-size: 50px;
+}
+#snakeMap{
+	margin: 0 auto;
+	border: 3px solid red;
+}
+.col{
+	border: 1px solid black;
+	float: left;
+	/* 怪异盒模型 */
+	box-sizing: border-box;
+}
+.moveSnake{
+	background-color: greenyellow;
+	border: none;
+}
+.food{
+	background-color: yellow;
+}
